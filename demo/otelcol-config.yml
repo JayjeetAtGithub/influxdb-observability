@@ -11,9 +11,10 @@ receivers:
 
 exporters:
   influxdb:
-    endpoint:
+    endpoint: http://host.docker.internal:8080
+    org: otel
     bucket: otel
-    token:
+    token: xxx
     metrics_schema: otel-v1
 
 connectors:
